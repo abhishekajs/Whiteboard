@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiteboard</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Montserrat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font End -->
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="navbar">
+    <div class="content">
+            <span class="button effect heading">
+                Whiteboard
+            </span>
+        <div class="intructions" id="open">
+
+            <div class="burger button effect">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <div class="modal-container" id="modal_container">
+                <div class="modal">
+                    <h2>Instructions</h2>
+
+                    <div class="adjust">
+                        <img  src="./assets/pen.png" alt="pen-tool" srcset="">
+                        <div class="ins">
+                            <div>Pen tool</div>
+                            <div>Used for drawing </div>
+                        </div>
+                    </div>
+
+                    <div class="adjust">
+                        <img  src="./assets/eraser.png" alt="eraser" srcset="">
+                        <div class="ins">
+                            <div>Eraser</div>
+                            <div>Used for erasing drawings </div>
+                        </div>
+                    </div>
+
+                    <div class="adjust">
+                        <img  src="./assets/paint-bucket.png" alt="paint bucket tool" srcset="">
+                        <div class="ins">
+                            <div>Paint Bucket Tool</div>
+                            <div>Used for filling paint within specific boundaries </div>
+                        </div>
+                    </div>
+
+                    <div class="adjust">
+                        <img  src="./assets/delete.png" alt="clear" srcset="">
+                        <div class="ins">
+                            <div>Clear</div>
+                            <div>Used for clearing everything in the canvas </div>
+                        </div>
+                    </div>
+
+                    <div class="adjust">
+                        <img  src="./assets/Rectangle 2.png" alt="rectangle" srcset="">
+                        <div class="ins">
+                            <div>Rectangle</div>
+                            <div>Used for creating a rectangle </div>
+                        </div>
+                    </div>
+
+                    <div class="adjust">
+                        <img  src="./assets/Line 1.png" alt="line" srcset="">
+                        <div class="ins">
+                            <div>Line tool</div>
+                            <div>Used for creating line between two specific points </div>
+                        </div>
+                    </div>
+                    <div class="close-button">
+                        <button id="close" class="button effect mid">Close</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Canvas -->
+<canvas id="art-board">
+
+</canvas>
+
+<!-- Controls -->
+<section>
+    <div class="controls">
+        <button id="pen-tool" class="icons" >
+            <img  src="./assets/pen.png" alt="pen-tool" srcset="">
+        </button>
+        <button id="eraser-tool" class= "icons">
+            <img  src="./assets/eraser.png" alt="eraser-tool" srcset="">
+        </button>
+        <button id="paint-tool" class= "icons fill-tool">
+            <img  src="./assets/paint-bucket.png" alt="paint-tool" srcset="">
+        </button>
+        <button id="clear" class= "icons">
+            <img  src="./assets/delete.png" alt="delete-tool" srcset="">
+        </button>
+        <button class= "icons colour-tool">
+            <label for="colorpicker-tool"></label><input onchange = "pencilColor()" type="color" class="color-picker" id="colorpicker-tool" value="#000000">
+        </button>
+        <button id="line-tool" class= "icons">
+            <img  src="./assets/Line 1.png" alt="line-tool" srcset="">
+        </button>
+
+    </div>
+</section>
+<!-- <script src="./assets/js/script.js"></script> -->
+<script src="index.js"></script>
+</body>
+</html>
